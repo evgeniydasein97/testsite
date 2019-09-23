@@ -1,0 +1,206 @@
+@font-face {
+    font-family: RobotoRegular; 
+    src: url(fonts/roboto-regular.ttf); 
+   }
+   @font-face {
+    font-family: RobotoMedium; 
+    src: url(fonts/roboto-medium.ttf);
+   }
+   @font-face {
+    font-family: RobotoLight; 
+    src: url(fonts/roboto-light.ttf); 
+   }
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0px auto;
+    max-width: 1120px ; 
+}
+
+
+
+header .container {
+    height: 64px;
+    margin-top: 40px;
+}
+.logo {
+    font-family: 'Calibri';
+    font-weight: 'bold';
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 28px;
+    float: left;
+    
+}
+.main-nav {
+    margin-left: 64px;
+    float: left;
+    padding-top: 15px;
+    display: flex;
+    color: #0d3e6e;
+    font-family: 'RobotoRegular';
+    font-size: 14px;
+    max-width: 580px;
+    min-width: 480px;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.main-nav a {
+    text-decoration: none;
+}
+.main-nav a:hover {
+    padding-bottom: 3px;
+    border-bottom: 2px #68cdff solid;
+}
+
+.user-input {
+    display: flex;
+    float: right;
+}
+.user-img {
+    padding-top: 8px;
+    width: 32px;
+    height: 32px;
+
+}
+.user-name {
+    font-size: 14px;
+    font-family: 'RobotoRegular';
+    color:#0d3e6e;
+    padding-top: 14px;
+    padding-left: 16px;
+}
+button.menu {
+    display: none;
+}
+@media (max-width:1280px){
+    .container {
+        margin: 0px 7.1%;
+    }
+}
+@media (max-width: 970px) {
+    .container {
+        margin: 0px 4.6%;
+    }
+    header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-nav {
+        display: wrap;
+        margin-left: 0px;
+        font-size: 14px;
+        max-width: 525px;
+        min-width: 425px;
+    }
+    .main-nav a {
+        text-decoration: none;
+    }
+    .main-nav a:hover {
+        padding-bottom: 3px;
+        border-bottom: 2px #68cdff solid;
+    }
+    
+    .user-input {
+        display: flex;
+        float: right;
+    }
+    .user-img {
+        padding-top: 8px;
+        width: 32px;
+        height: 32px;
+    
+    }
+    .user-name {
+        font-size: 14px;
+        font-family: 'RobotoRegular';
+        color:#0d3e6e;
+        padding-top: px;
+        padding-left: 7px;
+    }   
+}
+@media (max-width: 640px){
+ 
+    header .container {
+        height: 76px;
+        margin-top: 0px;
+    }
+    .main-nav {
+        display:none;
+    }
+    .logo {
+        font-size: 24px;
+        margin-top: 26px;
+    }
+    .user-input {
+        display: none;
+    }
+    button.menu {
+        display: block;
+        border: none;
+        background-color: transparent;
+    }
+}
+@media (max-width: 320px){
+    header .container {
+        height: 60px;
+        margin-top: 0px;
+    }
+    button.menu {
+        margin-top: 20px;
+    }
+
+}
+
+form h2 {
+    font-family: 'RobotoRegular';
+    font-size: 28px;
+    line-height: 36px;
+    color: #033568;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    font-family: 'RobotoLight';
+    font-size: 12px;   
+    color: #d2d4d6;
+    margin-top: 26px;
+    width: 265px;
+    height: 34px;
+    border: 1px solid #65cafc;
+    border-radius: 2px;
+    text-indent: 5px;
+}
+
+form button {
+    color: #65cafc;
+    margin-top: 18px;
+    width: 170px;
+    height: 35px;
+    font-family: 'RobotoLight';
+    border-radius: 2px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #65cafc;
+    cursor: pointer;
+}
+form button:active {
+    background-color: #65cafc;
+    color: white;
+}
+
+@media (max-width:320px) {
+    form input, form button{
+        width: 290px;
+    }
+    form h2 {
+        font-size: 24px;
+    }
+}
